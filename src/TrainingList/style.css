@@ -1,0 +1,32 @@
+.trainingList > h1 {
+    border: 4px solid brown;
+    padding: 0.5em 0.5em;
+    margin: 0.4em auto;
+    text-align: left;
+    width: 500px;
+    box-sizing: border-box;
+}
+
+.trainingList p {
+    border: 4px solid green;
+    padding: 0.5em 0.2em;
+    margin: 0.3em auto;
+    width: 500px;
+    box-sizing: border-box;
+}
+
+.trainingList ul {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.trainingList .status-off,
+.trainingList .status-on {
+    background-color: rgb(255, 145, 145);
+    font-weight: bold;
+    border: none;
+}
+
+.trainingList .status-on {
+    background-color: rgb(174, 255, 158);
+}
