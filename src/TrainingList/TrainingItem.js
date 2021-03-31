@@ -15,9 +15,14 @@ class TrainingItem extends React.Component {
             alert(this.props.listContent);
             console.log(evt.nativeEvent.type);
         }
-        return (
-            <p onClick={(evt) => atClickDo(evt)}>{this.props.listContent}</p>
-        )
+        
+        if (this.props.listContent === "Angular") {
+            return null;
+        } else {
+            return (
+                <p onClick={(evt) => atClickDo(evt)}>{this.props.listContent}</p>
+            )
+        }
     } 
 }
 
