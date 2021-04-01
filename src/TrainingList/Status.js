@@ -27,13 +27,11 @@ class Status extends React.Component {
         window.addEventListener("offline", () => this.changeStatus(false), false);
         window.addEventListener("online", () => this.changeStatus(true), true);
 
-        if (this.state.status) {
-            return null;
-        } else {
-            return (
-                <p className={this.state.status ? 'status-on' : 'status-off'}>{this.state.status ? 'online' : 'offline'}</p>
-            );
-        }
+        return (
+            this.state.status
+            &&
+            <p className={this.state.status ? 'status-on' : 'status-off'}>{this.state.status ? 'online' : 'offline'}</p>
+        );
     }
 }
 
