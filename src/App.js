@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import Form from './Form/Form';
 // import Student from './Student/Student';
 import TrainingList from './TrainingList';
 
@@ -26,6 +27,7 @@ function App() {
           <Student firstname="Stéphane" lastname="MARIN"></Student>
         </ul> */}
         <TrainingList></TrainingList>
+        <Form></Form>
       {/* </header> */}
     </div>
   );
